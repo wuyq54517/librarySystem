@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: ASD.123456 # mysql密码
+    url: jdbc:mysql://20.222.207.71:3306/big_event #换成自己的ip
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  data:
+    redis:
+      host: 20.222.207.71 #换成自己的ip
+      port: 6379
+      password: YourRedisPassword #redis 密码
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名和下划线命名的自动转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
