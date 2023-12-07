@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    username: root
+    password: ASD.123456
+    url: jdbc:mysql://localhost:3306/big_event
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+# 阿里云oos配置信息
+oss:
+  endpoint: "https://oss-cn-beijing.aliyuncs.com"
+  access-key-id: "LTAI5t783FHBtUdiLory3bVJ"
+  access-key-secret: "berrIOl1sTzcyAYxEsfcIy2gvay4KE"
+  bucket-name: "big-event0"
+
+
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名和下划线命名的自动转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
