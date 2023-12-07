@@ -1,10 +1,20 @@
 # 基于SprigBoot的简单图书管理系统！
 
+## 测试网站
 
+[测试网站](http://lib.123417.xyz)
+
+账号：admin
+
+密码：admin
 
 ## 项目运行
 
 ### 前期准备
+
+> github代理地址
+
+https://mirror.ghproxy.com/
 
 1. 安装docker
 
@@ -15,8 +25,8 @@ apt install docker.io
 2. 安装docker-compose
 
 ```shell
-curl -L https://get.daocloud.io/docker/compose/releases/download/v2.1.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 3. 下载文件
