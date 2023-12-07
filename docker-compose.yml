@@ -21,6 +21,7 @@ services:
       - MYSQL_PASSWORD=ASD.123456
     volumes:
       - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data:/var/lib/mysql
       
   redis:
     image: redis:latest
