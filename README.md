@@ -2,7 +2,7 @@
 
 ## 测试网站
 
-[测试网站](http://lib.123417.xyz)
+[http://lib.123417.xyz](http://lib.123417.xyz)
 
 账号：admin
 
