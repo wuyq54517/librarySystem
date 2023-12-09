@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.Map;
-
+@Transactional
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired

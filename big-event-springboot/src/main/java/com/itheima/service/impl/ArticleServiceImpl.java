@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
-
+@Transactional
 @Service
 public class ArticleServiceImpl implements ArticleService {
 
