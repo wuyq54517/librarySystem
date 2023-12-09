@@ -1,7 +1,7 @@
 spring:
   datasource:
     username: root
-    password: ASD.123456
+    password: your-mysql-password
     url: jdbc:mysql://localhost:3306/big_event
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
@@ -14,9 +14,9 @@ spring:
 # 阿里云oos配置信息
 oss:
   endpoint: "https://oss-cn-beijing.aliyuncs.com"
-  access-key-id: "LTAI5t783FHBtUdiLory3bVJ"
-  access-key-secret: "berrIOl1sTzcyAYxEsfcIy2gvay4KE"
-  bucket-name: "big-event0"
+  access-key-id: "your-access-key-id"
+  access-key-secret: "your-access-key-secret"
+  bucket-name: "your-bucket-name"
 
 
 
