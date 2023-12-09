@@ -1,8 +1,10 @@
 spring:
   datasource:
     username: root
-    password: ASD.123456 # mysql密码
-    url: jdbc:mysql://20.222.207.71:3306/big_event #换成自己的ip
+    password: ASD.123456
+ # mysql密码
+    url: jdbc:mysql://20.222.207.71:3306/big_event
+ #换成自己的ip
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   data:
@@ -10,6 +12,13 @@ spring:
       host: 20.222.207.71 #换成自己的ip
       port: 6379
       password: YourRedisPassword #redis 密码
+      timeout: 5000
+      jedis:
+        pool:
+          max-idle: 6
+          max-active: 32
+          max-wait: 100
+          min-idle: 4
       
 
 oss: 

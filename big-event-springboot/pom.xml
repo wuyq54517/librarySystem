@@ -97,11 +97,6 @@
       <version>2.3.3</version>
     </dependency>
 
-    <!--redis坐标-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-redis</artifactId>
-    </dependency>
     <!--druid依赖-->
     <dependency>
       <groupId>com.alibaba</groupId>
@@ -114,6 +109,27 @@
       <artifactId>maven-compiler-plugin</artifactId>
       <version>3.8.1</version>
     </dependency>
+
+<!--redis jedis-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>redis.clients</groupId>
+          <artifactId>jedis</artifactId>
+        </exclusion>
+        <exclusion>
+          <artifactId>lettuce-core</artifactId>
+          <groupId>io.lettuce</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+    </dependency>
+
   </dependencies>
 
 
