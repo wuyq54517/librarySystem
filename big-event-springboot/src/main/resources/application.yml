@@ -10,6 +10,12 @@ spring:
     redis:
       host: localhost
       port: 6379
+      jedis:
+        pool:
+          max-idle: 6
+          max-active: 32
+          max-wait: 100
+          min-idle: 4
 
 # 阿里云oos配置信息
 oss:

@@ -21,12 +21,12 @@ spring:
           min-idle: 4
       
 
-oss: 
 # 阿里云oos配置信息
+oss:
   endpoint: "https://oss-cn-beijing.aliyuncs.com"
-  access-key-id: "LTAI5t783FHBtUdiLory3bVJ"
-  access-key-secret: "berrIOl1sTzcyAYxEsfcIy2gvay4KE"
-  bucket-name: "big-event0"
+  access-key-id: "your-access-key-id"
+  access-key-secret: "your-access-key-secret"
+  bucket-name: "your-bucket-name"
   
 mybatis:
   configuration:
